@@ -1,43 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!--
     Pragmatic JavaScript
     Chapter 1
     Programming Assignment
 
-    Author:
-    Date:
-    Filename:
+    Author: Bernice Templeman
+    Date: 03/30/2024
+    Filename: index.html
   -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Roleplay Character Generator</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <div id="mainContainer">
-      <form id="characterForm">
-        <label for="heroName">Hero Name:</label><br />
-        <input type="text" id="heroName" name="heroName" required /><br />
-        <label for="heroGender">Hero Gender:</label><br />
-        <select id="heroGender" name="heroGender" required>
-          <option value="">Select...</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="other">Other</option></select>
-          <br />
-        <label for="heroClass">Hero Class:</label><br />
-        <select id="heroClass" name="heroClass" required>
-          <option value="">Select...</option>
-          <option value="warrior">Warrior</option>
-          <option value="mage">Mage</option>
-          <option value="rogue">Rogue</option></select>
-          <br />
-        <button id="generateHero">Generate Hero</button>
-      </form>
+      <section>
+        <h1>Roleplay Character Generator</h1>
+        <form id="characterForm">
+          <fieldset>
+            <legend>Please enter your information:</legend>
+            <label for="heroName">Hero Name:</label>
+            <input type="text" id="heroName" name="heroName" required />
+            <label for="heroGender">Hero Gender:</label>
+            <select id="heroGender" name="heroGender" required>
+              <option value="">Select...</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+            <br />
+            <label for="heroClass">Hero Class:</label>
+            <select id="heroClass" name="heroClass" required>
+              <option value="">Select...</option>
+              <option value="warrior">Warrior</option>
+              <option value="mage">Mage</option>
+              <option value="rogue">Rogue</option>
+            </select>
+            <br />
+            <div id="feedback"></div>
+            <br />
+            <button id="generateHero">Generate Hero</button>
+            <br />
+          </fieldset>
+        </form>
+      </section>
 
-      <div id="characterOutput"></div>
+      <div id="characterOutput">
+        <br />
+        <div id="welcome"></div>
+        <br />
+      </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

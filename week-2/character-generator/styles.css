@@ -3,9 +3,82 @@
   Chapter 1
   Programming Assignment
 
-  Author:
-  Date:
-  Filename:
+  Author: Bernice Templeman
+  Date: 03/30/2024
+  Filename: styles.css
 */
 
 /* Your CSS goes here */
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h3,
+ul,
+aside,
+figure,
+figcaption,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body and images */
+body {
+  background-color: #f6eee4;
+}
+
+h1 {
+  text-align: center;
+}
+
+div #feedback {
+  clear: left;
+  color: red;
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+/* Style rules for form elements  */
+fieldset,
+input,
+textarea {
+  margin-bottom: 0;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding-top: 2%;
+}
+
+form #generateHero {
+  margin: 0 auto;
+  display: block;
+  padding: 2%;
+  background-color: #78593a;
+  color: #f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
+}
+
+#welcome {
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+}
