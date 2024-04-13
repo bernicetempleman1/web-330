@@ -44,13 +44,11 @@ for (let i = 0; i < 48; i++) {
 let pieces = document.querySelectorAll('div#puzzleBoard img');
 
 // for loop that iterates through every item in the pieces node list.
-// for loop that iterates through every item in the pieces node list.
-for (let i = 0; i< pieces.length; i++) {
+for (let i = 0; i < pieces.length; i++) {
   // For each item,
   //add an event listener that runs the grabPiece() function in response to the pointerdown event.
   pieces[i].addEventListener('pointerdown', grabPiece);
 }
-
 
 function grabPiece(e) {
   // Set the value of the pointerX and pointerY variables to the values of the clientX and clientY properties of the event object.
@@ -81,15 +79,15 @@ function movePiece(e) {
   let diffY = e.clientY - pointerY;
 
   // Set the value of the left style property of the event target to sum of pieceX and diffX plus the text string  “px”.
-  e.target.style.left = pieceX + diffX + "px";
+  e.target.style.left = pieceX + diffX + 'px';
   // Set the value of the top style property of the event target to sum of pieceY and diffY plus the text  string “px”.
-  e.target.style.top = pieceY + diffY + "px";
+  e.target.style.top = pieceY + diffY + 'px';
 }
 
 // Create the dropPiece() function. Within the function do the following:
 function dropPiece(e) {
   //Remove the movePiece() function from the event listener for the pointermove event.
-  e.target.removeEventListener("pointermove", movePiece);
+  e.target.removeEventListener('pointermove', movePiece);
   //Remove the dropPiece() function from the event listener for the pointerup event.
-  e.target.removeEventListener("pointerup", dropPiece);
+  e.target.removeEventListener('pointerup', dropPiece);
 }
