@@ -61,8 +61,7 @@ label {
   padding-top: 2%;
 }
 
-
-form #reservationForm {
+form #reserve {
   margin: 0 auto;
   display: block;
   padding: 2%;
@@ -72,7 +71,7 @@ form #reservationForm {
   border-radius: 10px;
 }
 
-.form-container {
+#form-container {
   text-align: center;
   font-weight: bold;
   font-size: large;

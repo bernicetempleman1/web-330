@@ -41,7 +41,7 @@ function reserveTable(tableNumber, callback, time) {
   //https://www.freecodecamp.org/news/javascript-array-of-objects-tutorial-how-to-create-update-and-loop-through-objects-using-js-array-methods/
   //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
 
-  let index = tables.findIndex((x) => x.tableNumber == tableNumber);
+  let index = tables.findIndex((x) => x.tableNumber === tableNumber);
   if (tables[index].isReserved) {
     //  not available, it should immediately call the callback function with an error message.
     message = 'Error: can not make reservation for Table ' + tableNumber;
@@ -59,6 +59,7 @@ function reserveTable(tableNumber, callback, time) {
   }
 }
 
+// function to notify of table abailability
 function goRestaurant(message) {
   document.getElementById('message').textContent = message;
 }
@@ -74,6 +75,7 @@ document
     let tableNumber = document.getElementById('tableNumber').value;
     let name = document.getElementById('name').value;
 
+    //check for valid data entries
     if (name.length == '') {
       message.textContent = 'Name must be filled out';
       return false;
@@ -81,6 +83,7 @@ document
       message.textContent = 'A table number must be selected';
       return false;
     } else {
+      //check if table exists
       let index = tables.findIndex((x) => x.tableNumber === tableNumber);
       if (index <0) {
         message.textContent = 'Error: table number does not exist.';

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!--
       Pragmatic JavaScript
@@ -10,19 +10,27 @@
       Date: 04/18/2024
       Filename: index.html
     -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Table Reservation</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <div class="form-container">
-      <form id="reservationForm">
-        <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" /><br />
-        <label for="tableNumber">Table Number:</label><br />
-        <input type="number" id="tableNumber" name="tableNumber" /><br />
-        <input type="submit" value="Reserve" />
-      </form>
-      <p id="message"></p>
+    <div id="form-container">
+      <section>
+        <form id="reservationForm">
+          <fieldset>
+            <legend>Please enter your information:</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+            <label for="tableNumber">Table Number:</label>
+            <input type="number" id="tableNumber" name="tableNumber" /><br />
+            <br />
+            <input id="reserve" type="submit" value="Reserve" />
+          </fieldset>
+        </form>
+        <p id="message"></p>
+      </section>
     </div>
     <script src="script.js"></script>
   </body>
