@@ -4,8 +4,8 @@
       Project 11-02
 
       Project to city and state information from a provided postal code
-      Author: 
-      Date:   
+      Author: Bernice Templeman
+      Date: 04/27/2024
 
       Filename: project11-02.js
 */
@@ -16,7 +16,7 @@ let region = document.getElementById("region");
 let country = document.getElementById("country");
 
 postalCode.onblur = function() {
- 
+
 }
 
 
