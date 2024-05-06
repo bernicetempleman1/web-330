@@ -18,22 +18,22 @@
 let heroes = [
   // TODO: Create superhero objects
   {
-    name: 'Superhero 1',
-    superpower: 'power',
-    weakness: 'weakness',
-    city: 'city',
+    name: 'Wonder Woman',
+    superpower: 'Strong',
+    weakness: 'Weapons',
+    city: 'Gateway City',
   },
   {
-    name: 'Superhero 2',
-    superpower: 'power2',
-    weakness: 'weakness2',
-    city: 'city2',
+    name: 'Invisible Woman',
+    superpower: 'Invisible',
+    weakness: 'Concentration',
+    city: 'Central City',
   },
   {
-    name: 'Superhero 3',
-    superpower: 'power 3',
-    weakness: 'weakness 3',
-    city: 'city3',
+    name: 'Cat Woman',
+    superpower: 'Resurrection',
+    weakness: 'Box',
+    city: 'Gotham',
   },
 ];
 
