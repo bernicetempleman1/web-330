@@ -8,7 +8,6 @@
   Filename: styles.css
 */
 
-/* Add your styles here */
 
 /* apply a natural box layout model to all elements */
 * {
@@ -162,7 +161,7 @@ section > h1 {
   padding: 20px 0;
 }
 
-fieldset#addressFields {
+fieldset {
   display: block;
   margin: 0 auto;
   width: 60%;
@@ -189,6 +188,14 @@ input {
   float: left;
 }
 
-input#postalCode {
-  width: 120px;
+input#title-input {
+  width: 360px;
+}
+
+p {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  text-align: left;
+  padding-top: 20px;
 }

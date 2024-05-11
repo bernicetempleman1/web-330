@@ -72,9 +72,9 @@ async function displayMovie(title) {
         <p id="movie-synopsis"></p>
     */
     document.getElementById('movie-title').textContent = movie.title;
-    document.getElementById('movie-director').textContent = movie.director;
-    document.getElementById('movie-year').textContent = movie.releaseYear;
-    document.getElementById('movie-synopsis').textContent = movie.synopsis;
+    document.getElementById('movie-director').textContent = "Director: " + movie.director;
+    document.getElementById('movie-year').textContent = "Release Year: " + movie.releaseYear;
+    document.getElementById('movie-synopsis').textContent = "Synopsis: " + movie.synopsis;
   } catch (error) {
     //console.error(error); // This will run if the Promise is rejected
     document.getElementById('error-message').textContent =
