@@ -11,7 +11,7 @@
       Filename: index.html
 
       Description: Build a form for the user to enter a movie title, and
-                    sections to display the movie’s title, director, release year, and a brief synopsis.
+                   sections to display the movie’s title, director, release year, and a brief synopsis.
     -->
     <title>Movie Info</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -20,25 +20,29 @@
     <header>
       <h1>Movie Info</h1>
     </header>
-    <hr>
+    <hr />
     <section>
       <fieldset>
-      <div class="form-container">
-        <form id="movie-form">
-          <input type="text" id="title-input" placeholder="Enter movie title" />
-          <button type="submit">Search</button>
-        </form>
-        <br>
-        <div id="movie-info">
-          <h2 id="movie-title"></h2>
-          <p id="movie-director"></p>
-          <p id="movie-year"></p>
-          <p id="movie-synopsis"></p>
+        <div class="form-container">
+          <form id="movie-form">
+            <input
+              type="text"
+              id="title-input"
+              placeholder="Enter movie title"
+            />
+            <button type="submit">Search</button>
+          </form>
+          <br />
+          <div id="movie-info">
+            <h2 id="movie-title"></h2>
+            <p id="movie-director"></p>
+            <p id="movie-year"></p>
+            <p id="movie-synopsis"></p>
+          </div>
+          <p id="error-message"></p>
         </div>
-        <p id="error-message"></p>
-      </div>
-      <script src="script.js"></script>
-    </fieldset>
+        <script src="script.js"></script>
+      </fieldset>
     </section>
   </body>
 </html>
