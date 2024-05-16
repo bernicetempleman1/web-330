@@ -4,8 +4,8 @@
       Project 12-03
 
       Project to show a recipe with expanding/contracting content
-      Author: 
-      Date:   
+      Author: Bernice Templeman
+      Date: 05/16/2024
 
       Filename: project12-03.js
 */
