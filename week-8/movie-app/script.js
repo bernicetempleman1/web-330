@@ -65,12 +65,7 @@ async function displayMovie(title) {
   // Implement this function
   try {
     let movie = await fetchMovie(title);
-    /*
-    <h2 id="movie-title"></h2>
-        <p id="movie-director"></p>
-        <p id="movie-year"></p>
-        <p id="movie-synopsis"></p>
-    */
+
     document.getElementById('movie-title').textContent = movie.title;
     document.getElementById('movie-director').textContent =
       'Director: ' + movie.director;

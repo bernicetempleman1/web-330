@@ -37,14 +37,6 @@ let heroes = [
   },
 ];
 
-let data1 = document.getElementById('data1');
-let data2 = document.getElementById('data2');
-let data3 = document.getElementById('data3');
-
-let htmlCode1 = 'No data found';
-let htmlCode2 = 'No data found';
-let htmlCode3 = 'No data found';
-
 // Create three functions, each function should return a promise that “fetches” the data for a different superhero in the object array.
 // Use the setTimeout to simulate a delay in fetching the data.
 // Set each function’s timer to a different value starting with 2 seconds and expanding from there.
