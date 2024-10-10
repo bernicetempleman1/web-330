@@ -5,77 +5,241 @@
   Date: 10/07/204
 -->
 <html lang="en">
-<head>
-  <title>Portfolio: WEB-330 Projects</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet"  href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/appletouch-icon.png">
-  <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
-</head>
-<body>
-  <div id="wrapper">
+  <head>
+    <title>Portfolio: WEB-330 Projects</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/appletouch-icon.png"
+    />
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png" />
+    <style>
+       .cards {
+         display: flex;
+         justify-content: space-between;
+         padding: 20px;
+      }
+       .card {
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+         transition: 0.3s;
+         width: 40%;
+         margin: 0.4em;
+       }
 
-    <!-- Use the header area for the website name or logo -->
-    <header>
-      <div class="tab-desk">
+       .card:hover {
+         box-shadow: 16px; rgba(0, 0, 0, 0.2);
+       }
 
-      </div>
-      <div class="mobile">
-        <h1>&#128483; Portfolio</h1>
-        <h3>Bernice Templeman</h3>
-      </div>
-    </header>
-
-    <!-- Use the nav area to add hyperlinks to other pages within the website-->
-    <nav>
-      <ul>
-        <li><a href="index.html">Enterprise JavaScript II</a></li>
-
-      </ul>
-    </nav>
-
-    <!-- Use the main area to add the main content to the webpage -->
-    <main>
-
-      <!-- Section for Picture, goals, accomplishments, experience, education -->
-      <section class="grid2">
-
-        <div>
-          <h2>Welcome to Bernice Templeman’s Enterprise JavaScript II Projects.</h2>
-
-          <li><a href="./week-1/project08-01/project08-01.html">Timer</a></li>
-          <li><a href="./week-2/character-generator/index.html">Character Generator</a></li>
-          <li><a href="./week-3/project09-02/project09-02a.html">Rider Profile</a></li>
-          <li><a href="./week-4/project10-01/project10-01.html">Jigsaw Puzzle</a></li>
-          <li><a href="./week-5/restaurant-reservation/index.html">Restaurant Reservation</a></li>
-          <li><a href="./week-6/project11-02/project11-02.html">Place and Region Lookup</a></li>
-          <li><a href="./week-7/superhero-dashboard/index.html">Superhero Dashboard</a></li>
-          <li><a href="./week-8/movie-app/index.html">Movie App</a></li>
-          <li><a href="./week-9/project12-03/project12-03.html">Recipe</a></li>
-
+       .container {
+         padding: 16px;
+       }
+       .cards {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Use the header area for the website name or logo -->
+      <header>
+        <div class="tab-desk"></div>
+        <div class="mobile">
+          <h1>&#128483; Portfolio</h1>
+          <h3>Bernice Templeman</h3>
         </div>
-      </section>
+      </header>
 
+      <!-- Use the nav area to add hyperlinks to other pages within the website-->
+      <nav>
+        <ul>
+          <li><a href="index.html">Enterprise JavaScript II</a></li>
+        </ul>
+      </nav>
 
-    </main>
+      <!-- Use the main area to add the main content to the webpage -->
+      <main>
+        <!-- Section for Picture, goals, accomplishments, experience, education -->
+        <h2>
+          Welcome to Bernice Templeman’s Enterprise JavaScript II Projects.
+        </h2>
 
-    <!-- Use the footer area to add webpage footer content-->
-    <footer>
-      <p>&copy; Copyright 2024. All Rights Reserved.</p>
-      <p><a href="mailto:bernice.templeman1@gmail.com">bernice.templeman1@gmail.com</a></p>
-    </footer>
+        <div class="centered">
+          <section class="cards">
+            <article class="card">
+              <img style="" src="./images/timer.png" alt="Timer" />
+              <h3>Timer</h3>
+              <p>Description:</p>
+              <p>Technologies:</p>
+              <p>Learned:</p>
+              <a
+                href="./week-1/project08-01/project08-01.html"
+                class="button-link"
+                target="_blank"
+                >Project Link</a
+              >
+            </article>
 
-  </div>
+            <article class="card">
+              <img
+                style=""
+                src="./images/character-generator.png"
+                alt="Character Generator"
+              />
 
-</body>
+              <h3>Character Generator</h3>
+              <p>Description:</p>
+              <p>Technologies:</p>
+              <p>Learned:</p>
+              <a
+                href="./week-2/character-generator/index.html"
+                class="button-link"
+                target="_blank"
+                >Project Link</a
+              >
+            </article>
+
+            <article class="card">
+              <img style="" src="./images/rider.png" alt="Rider Profile" />
+              <h3>Rider Profile</h3>
+              <p>Description:</p>
+              <p>Technologies:</p>
+              <p>Learned:</p>
+              <a
+                href="./week-3/project09-02/project09-02a.html"
+                class="button-link"
+                target="_blank"
+                >Project Link</a
+              >
+            </article>
+
+            <article class="card">
+              <img style="" src="./images/jigsaw.png" alt="Jigsaw Puzzle" />
+
+              <h3>Jigsaw Puzzle</h3>
+              <p>Description:</p>
+              <p>Technologies:</p>
+              <p>Learned:</p>
+              <a
+                href="./week-4/project10-01/project10-01.html"
+                class="button-link"
+                target="_blank"
+                >Project Link</a
+              >
+            </article>
+
+            <article class="card">
+              <img
+                style=""
+                src="./images/reservation.png"
+                alt="Restaurant Reservation"
+              />
+              <h3>Restaurant Reservation</h3>
+              <p>Description:</p>
+              <p>Technologies:</p>
+              <p>Learned:</p>
+              <a
+                href="./week-5/restaurant-reservation/index.html"
+                class="button-link"
+                target="_blank"
+                >Project Link</a
+              >
+            </article>
+
+            <article class="card">
+              <img
+                style=""
+                src="./images/lookup.png"
+                alt="Place and Region Lookup"
+              />
+
+              <h3>Place and Region Lookup</h3>
+              <p>Description:</p>
+              <p>Technologies:</p>
+              <p>Learned:</p>
+              <a
+                href="./week-6/project11-02/project11-02.html"
+                class="button-link"
+                target="_blank"
+                >Project Link</a
+              >
+            </article>
+
+            <article class="card">
+              <img
+                style=""
+                src="./images/dashboard.png"
+                alt="Superhero Dashboard"
+              />
+              <h3>Superhero Dashboard</h3>
+              <p>Description:</p>
+              <p>Technologies:</p>
+              <p>Learned:</p>
+              <a
+                href="./week-7/superhero-dashboard/index.html"
+                class="button-link"
+                target="_blank"
+                >Project Link</a
+              >
+            </article>
+
+            <article class="card">
+              <img style="" src="./images/movie.png" alt="Movie App" />
+
+              <h3>Movie App</h3>
+              <p>Description:</p>
+              <p>Technologies:</p>
+              <p>Learned:</p>
+              <a
+                href="./week-8/movie-app/index.html"
+                class="button-link"
+                target="_blank"
+                >Project Link</a
+              >
+            </article>
+
+            <article class="card">
+              <img style="" src="./images/recipe.png" alt="Recipe" />
+
+              <h3>Recipe</h3>
+              <p>Description:</p>
+              <p>Technologies:</p>
+              <p>Learned:</p>
+              <a
+                href="./week-9/project12-03/project12-03.html"
+                class="button-link"
+                target="_blank"
+                >Project Link</a
+              >
+            </article>
+          </section>
+        </div>
+      </main>
+
+      <!-- Use the footer area to add webpage footer content-->
+      <footer>
+        <p>&copy; Copyright 2024. All Rights Reserved.</p>
+        <p>
+          <a href="mailto:bernice.templeman1@gmail.com"
+            >bernice.templeman1@gmail.com</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
-
-
-
-
-
-

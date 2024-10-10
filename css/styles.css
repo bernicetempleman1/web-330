@@ -408,3 +408,46 @@ footer a {
   }
 
 }
+
+.pcontainer {
+  display: flex;
+
+}
+img {
+  max-width: 100%
+}
+.pimage {
+  flex-basis: 40%
+}
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+.projects-container {
+  list-style-type: none;
+  padding: 0;
+}
+.projects-item {
+  flex: 0 1 calc(33.33% - 20px);
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card {
+  padding: 20px;
+  background-color: white;
+}
+.button-link {
+  display: flex;
+
+  margin: 0 auto;
+  background-color: #008cba;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  height: 25px;
+  width: 100px;
+}
+.button-link:hover {
+  background-color: #04aa6d; /* Green */
+  color: white;
+}
